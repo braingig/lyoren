@@ -94,8 +94,8 @@ function Home() {
       <div className="category-grid">{categories.map((category, i) => <Link to={categoryPath(category)} className="category-tile" key={category} data-reveal style={{'--delay':i * 80 + 'ms'}}><Photo name={'piece-' + (i * 6 + 1)}/><span>{category}<Icon name="right" size={15}/></span></Link>)}</div>
     </section>
     <section className="feature">
-      <div className="feature-picture" data-reveal="image"><Photo name="feature" alt="Vesper Ring on blue-gray stone"/></div>
       <div className="feature-copy" data-reveal><p className="eyebrow">A closer look</p><h2>{featured.name}</h2><p>{featured.description}</p><span>{money(featured.price)}</span><Action to={productPath(featured)}>Discover the Vesper</Action></div>
+      <div className="feature-picture" data-reveal="image"><Photo name="feature" alt="Vesper Ring on blue-gray stone"/></div>
     </section>
     <section className="page-width home-products">
       <div className="section-heading" data-reveal><div><p className="eyebrow">New arrivals</p><h2>New this season</h2></div><Link className="text-link" to="/shop?edit=new">View all new <Icon name="right" size={16}/></Link></div>
